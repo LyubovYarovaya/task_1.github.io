@@ -1,0 +1,69 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+*:hover {
+    transition: all 300ms ease;
+}
+body{
+    font-family: 'Roboto';
+    font-weight: normal;
+	font-style: normal;
+    font-size: 16px;
+    color: $text;
+    background-color: $bg;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 300ms ease-in-out;
+    &:hover, 
+    &:focus,
+    &:active{
+        transition: all 300ms ease-in-out;
+    }
+}
+button{
+    outline: none;
+    transition: all 500ms ease-in-out;
+}
+input{
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+}
+.text-green {
+    color: $green;
+}
+.text-orange{
+    color: $orange;
+}
+.text-red {
+    color: $red;
+}
+.text-blue {
+    color: $blue;
+}
